@@ -1,3 +1,12 @@
+# Sample Code and note about machine learning/AI implementation 
+
+- Please note that the code in this repo is a simplified SAMPLE code/preview and will require additional modifications and integration with specific APIs and machine learning models. The 'your_api_key' will be replaced with actual API key for the wave conditions API, and 'surfboard_model.pkl' with the filename of the trained surfboard recommendation model.
+
+ToDo: Train the machine learning model using appropriate data before using it in the generate_surfboard_recommendation function. Additionally, install the necessary libraries such as requests, numpy, and scikit-learn using pip or any other package manager.
+
+This code will be adapted and expanded according to my specific requirements and the APIs and models I intend to use.
+
+
 # surf-craft-guru
 SurfCraft Guru - Virtual Surfboard Shaper & Recommendation Engine 
 

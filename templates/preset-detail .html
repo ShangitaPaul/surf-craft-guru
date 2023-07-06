@@ -1,0 +1,23 @@
+<!-- music_app/templates/preset_detail.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Platform - {{ preset.name }}</title>
+</head>
+<body>
+    <h1>{{ preset.name }}</h1>
+    <p>Artist: {{ preset.artist }}</p>
+    <p>{{ preset.description }}</p>
+
+    <h3>Comments:</h3>
+    {% for comment in comments %}
+        <p>{{ comment.user.username }}: {{ comment.text }}</p>
+    {% endfor %}
+
+    <h3>Ratings:</h3>
+    {% for rating in ratings %}
+        <p>{{ rating.user.username }}: {{ rating.rating }}</p>
+    {% endfor %}
+</body>
+</html>

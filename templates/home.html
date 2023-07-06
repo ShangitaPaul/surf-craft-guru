@@ -1,0 +1,20 @@
+<!-- music_app/templates/home.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Platform - Home</title>
+</head>
+<body>
+    <h1>Welcome to the Music Platform</h1>
+
+    {% for preset in presets %}
+        <div class="preset">
+            <h2>{{ preset.name }}</h2>
+            <p>Artist: {{ preset.artist }}</p>
+            <p>{{ preset.description }}</p>
+            <a href="{% url 'preset_detail' preset_id=preset.id %}">View Details</a>
+        </div>
+    {% endfor %}
+</body>
+</html>
